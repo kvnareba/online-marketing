@@ -10,6 +10,45 @@ from datetime import datetime
 
 fake = Faker()
 
+product_names = [
+    "Smartphone", "Laptop", "Headphones", "Camera", "Smartwatch",
+    "Tablet", "Gaming Console", "Bluetooth Speaker", "Drone", "Smart TV",
+    "Monitor", "Keyboard", "Mouse", "Printer", "Router",
+    "External Hard Drive", "Flash Drive", "Power Bank", "Projector", "Fitness Tracker"
+]
+
+product_descriptions = [
+    "High-end smartphone with excellent features.",
+    "Lightweight laptop with powerful performance.",
+    "Noise-cancelling over-ear headphones.",
+    "DSLR camera with 4K video recording.",
+    "Stylish smartwatch with multiple fitness features.",
+    "Compact tablet with a sharp display.",
+    "Next-gen gaming console with immersive graphics.",
+    "Portable Bluetooth speaker with deep bass.",
+    "High-performance drone with 1080p camera.",
+    "Smart TV with 4K resolution and streaming apps.",
+    "Ultra-wide monitor for an enhanced viewing experience.",
+    "Mechanical keyboard with RGB lighting.",
+    "Wireless mouse with ergonomic design.",
+    "All-in-one printer with scanning capabilities.",
+    "High-speed router with extended range.",
+    "1TB external hard drive for secure backup.",
+    "High-speed flash drive for quick data transfer.",
+    "Portable power bank with fast charging.",
+    "Mini projector with HD resolution.",
+    "Advanced fitness tracker with heart rate monitor."
+]
+
+image_paths = [
+    "images/product1.jpg", "images/product2.jpg", "images/product3.jpg", 
+    "images/product4.jpg", "images/product5.jpg", "images/product6.jpg", 
+    "images/product7.jpg", "images/product8.jpg", "images/product9.jpg",
+    "images/product10.jpg", "images/product11.jpg", "images/product12.jpg",
+    "images/product13.jpg", "images/product14.jpg", "images/product15.jpg",
+    "images/product16.jpg", "images/product17.jpg", "images/product18.jpg",
+    "images/product19.jpg", "images/product20.jpg"
+]
 
 def add_user(username, password, role):
     existing_user = User.query.filter_by(username=username).first()
